@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body background="./assets/Images/images (10).jpeg">
+    <div class="container">
+    <h1>Students Registration Form</h1>
+    <form id="stringForm">
+        <label for="inputString">Full Name:</label>
+        <input type="text" id="inputString" name="inputString" required placeholder="type in your name">
+        <small>(Format: Surname, other names)</small><br>
+        <label for="text"></label>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="email">
+        <label for="matric">Matric No:</label>
+        <input type="text" id="matric" name="matric" required pattern="[A-Za-z]{2}\d{6}" placeholder="matric no">
+        <small>(Format: AA123456)</small><br>
+        <label for="about">about me:<i>(optional)</i></label>
+        <input type="text" id="about" name="about" placeholder="about me">
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div id="stringInfo"></div>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
